@@ -17,6 +17,7 @@ public class player2Script : MonoBehaviour
     public float factor = 0.9f;
     public float facrapidez = 0.1f;
     public float rapMax = 2.5f;
+
     public int nVueltas = 0;
 
     public int maxVueltas;
@@ -132,7 +133,6 @@ public class player2Script : MonoBehaviour
             aux1 = false;
             aux2 = false;
             aux3 = false;
-
         }
 
     }
@@ -182,7 +182,14 @@ public class player2Script : MonoBehaviour
         }
         else if (nVueltas != maxVueltas - 1 && aux1 == true && aux2 != true)
         {
-            transform.position = new Vector3(1.66f, 7.87f, 0); // Regresa al carro a la posición inicial
+            transform.position = new Vector3(1.66f, 8.63f, 0); // Regresa al carro a la posición inicial
+            transform.rotation = Quaternion.Euler(5.08f, -7.2f, -91.2f);
+            aux1 = false;
+        }
+        else if (nVueltas != maxVueltas - 1 && aux1 != true && aux2 != true)
+        {
+            transform.position = new Vector3(1.66f, 8.63f, 0); // Regresa al carro a la posición inicial
+            transform.rotation = Quaternion.Euler(5.08f, -7.2f, -91.2f);
             aux1 = false;
         }
         else if (nVueltas != maxVueltas && aux1 == true && aux2 == true)

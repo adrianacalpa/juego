@@ -181,6 +181,14 @@ public class carroScript : MonoBehaviour
         else if(nVueltas != maxVueltas-1 && aux1 == true && aux2 != true)
         {
             transform.position = new Vector3(1.66f, 7.87f, 0); // Regresa al carro a la posición inicial
+            transform.rotation = Quaternion.Euler(2.31f, -8.5f, -282f);
+
+            aux1 = false;
+        }
+        else if (nVueltas != maxVueltas - 1 && aux1 != true && aux2 != true)
+        {
+            transform.position = new Vector3(1.66f, 7.87f, 0); // Regresa al carro a la posición inicial
+            transform.rotation = Quaternion.Euler(2.31f, -8.5f, -282f);
             aux1 = false;
         }
         else if(nVueltas != maxVueltas && aux1 == true && aux2 == true)

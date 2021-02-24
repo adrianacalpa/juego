@@ -28,7 +28,7 @@ public class bandera3 : MonoBehaviour
             }
 
         }
-        else if (other.name == "player1")
+        else if (other.name == "player2")
         {
             player2Script player2 = other.GetComponent<player2Script>();
 

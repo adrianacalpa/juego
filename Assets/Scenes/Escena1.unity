@@ -568,6 +568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472608006}
   - component: {fileID: 472608005}
+  - component: {fileID: 472608001}
   - component: {fileID: 472608003}
   - component: {fileID: 472608002}
   m_Layer: 0
@@ -577,6 +578,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &472608001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472608000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1983cc6fddc1658468e95fc14d70f85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 3
+  torque: -150
+  velocidadMax: 0
+  velocidadMin: 0
+  velMax: 8
+  velMin: 1
+  factor: 0.9
+  facrapidez: 0.1
+  rapMax: 2.5
+  nVueltas: 0
+  maxVueltas: 0
+  bandera1: 0
+  bandera2: 0
+  bandera3: 0
+  aux1: 0
+  aux2: 0
+  aux3: 0
 --- !u!50 &472608002
 Rigidbody2D:
   serializedVersion: 4
@@ -2031,7 +2061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968393778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.49, y: 8.4, z: 0}
+  m_LocalPosition: {x: -3.86, y: 8.4, z: 0}
   m_LocalScale: {x: 2.1774998, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
