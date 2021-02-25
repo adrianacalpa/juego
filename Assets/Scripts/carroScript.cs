@@ -122,6 +122,8 @@ public class carroScript : MonoBehaviour
     {
         if (bandera1 == true && bandera2==true && bandera3 == true)
         {
+
+            //FindObjectOfType<ganador>().texto("Jugador 1");
             FindObjectOfType<gameManager>().EndGame();
             Debug.Log("Fin juego gana jugador 1");
         }
