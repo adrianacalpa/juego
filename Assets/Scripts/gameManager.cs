@@ -6,13 +6,14 @@ public class gameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     bool Gameover = false;
-    public void EndGame()
+    public void EndGame(string jugador)
     {
         if(Gameover==false)
         {
             Gameover = true;
-            Debug.Log("GAME OVER");
-            SceneManager.LoadScene("GameOver");
+            Debug.Log("GAME OVER" + jugador);
+            if(jugador == "1") SceneManager.LoadScene("GameOver");
+            if(jugador == "2") SceneManager.LoadScene("GameOver2");
             //Restart();
         }
         

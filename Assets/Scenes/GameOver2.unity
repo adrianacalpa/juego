@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 658272961}
   - component: {fileID: 658272960}
   - component: {fileID: 658272959}
+  - component: {fileID: 658272962}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -458,6 +459,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658272962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658272958}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632b520796287a14785039616dc2927d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: 0
+  tmp2: 0
+  textValue: ' '
+  textElement: {fileID: 1944654449}
 --- !u!1 &762355973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Gan\xF3 jugador 1"
+  m_Text: "Gan\xF3 jugador 2"
 --- !u!222 &1944654450
 CanvasRenderer:
   m_ObjectHideFlags: 0

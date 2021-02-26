@@ -125,7 +125,7 @@ public class player2Script : MonoBehaviour
         if (bandera1 == true && bandera2 == true && bandera3 == true)
         {
 
-            FindObjectOfType<gameManager>().EndGame();
+            FindObjectOfType<gameManager>().EndGame("2");
             Debug.Log("Fin juego gana: jugador 2");
         }
         else if (aux1 == true && aux2 == true && aux3 == true)
