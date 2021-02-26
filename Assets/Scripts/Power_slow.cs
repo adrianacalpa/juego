@@ -29,7 +29,7 @@ public class Power_slow : MonoBehaviour
                 carro.VelMinEncendido();
             }
 
-            Destroy(this.gameObject);
+            transform.position = new Vector3(Random.Range(-6,7), 4.74f, 0.0f);
         }
         else if (other.tag == "player2")
         {
@@ -38,7 +38,7 @@ public class Power_slow : MonoBehaviour
             {
                 player2.VelMinEncendido();
             }
-            Destroy(this.gameObject);
+            transform.position = new Vector3(Random.Range(-6,7), 4.74f, 0.0f);
         }
 
     }

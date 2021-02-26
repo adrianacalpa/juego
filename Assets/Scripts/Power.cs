@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Power : MonoBehaviour
 {
+    public float Tiempo = 0.0f;
+    public bool DebeAumentar = false;
+
     void Start()
     {
 
@@ -12,7 +15,7 @@ public class Power : MonoBehaviour
     //---------------------------------------------------
     void Update()
     {
-
+        // tiempo();
     }
     //---------------------------------------------------
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,8 +30,7 @@ public class Power : MonoBehaviour
             {
                 carro.VelMaxEncendido();
             }
-
-            Destroy(this.gameObject);
+            transform.position = new Vector3(Random.Range(-6,7), 4.74f, 0.0f);
         }
         else if(other.tag == "player2")
         {
@@ -37,8 +39,9 @@ public class Power : MonoBehaviour
             {
                 player2.VelMaxEncendido();
             }
-            Destroy(this.gameObject);
+            transform.position = new Vector3(Random.Range(-6,7), 4.74f, 0.0f);
         }
+        // tiempo();
 
     }
 }

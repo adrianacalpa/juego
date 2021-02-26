@@ -6,12 +6,12 @@ public class player2Script : MonoBehaviour
 {
     // Defición de variables
 
-    public float velocidad = 3.0f;
-    public float torque = -150.0f;
+    public float velocidad = 2.0f;
+    public float torque = -200;
 
     public bool velocidadMax = false;
     public bool velocidadMin = false;
-    public float velMax = 8.0f;
+    public float velMax = 6.0f;
     public float velMin = 1.0f;
 
     public float factor = 0.9f;
